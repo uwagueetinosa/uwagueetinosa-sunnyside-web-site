@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Barlow", sans-serif;
+}
+header{
+   background-image: url(/images/desktop/image-header.jpg);
+   height: 80vh;
+   background-size: cover;
+   background-position-x: center;
+   background-position-y: center;
+   background-repeat: no-repeat;
+   padding: 30px;
+
+}
+.ham{
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top:10vh ;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: normal;
+}
+
+header h1+img{
+    display: block;
+    margin: auto;
+    margin-top: 10vh;
+    /* border: 2px solid red; */
+
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background: white;
+}
+
+.contact{
+    background-color: coral;
+}
+.contact:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+main div{
+    /* height: 50vh; */
+    border: 2px solid red;
+}
+
+main div:nth-child(1){
+    padding-block:20vh ;
+    padding-inline:10vw ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main div:nth-child(2){
+    background-image: url(/images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main div:nth-child(3){
+    background-image: url(/images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main div:nth-child(4){
+    background-color: #ffffff;
+    padding-block:20vh;
+    padding-inline:10vw;
+   /* border-radius: 25px; */
+    text-transform: uppercase;
+    font-size: bold;
+
+}
+
+main div:nth-child(5){
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-inline: 10vw;
+    padding-bottom: 5vh;
+}
+main div:nth-child(6){
+    background-image: url(/images/desktop/image-photography.jpg);
+    background-size: cover;
+    height: 60vh;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-inline: 10vw;
+    padding-bottom: 5vh;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.box {
+
+    /* border: 1px solid black; */
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    text-align: center;
+    /* margin-top: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid-container h2 {
+    margin-bottom: 20px;
+    /* text-transform: capitalize; */
+    font-size: 45px;
+    text-align: left;
+}
+
+.box p {
+    font-size: 18px;
+    margin-left: 180px;
+    margin-right: 50px;
+    text-align: left;
+    color: gray;
+}
+
+.grid-container a {
+    margin-top: 30px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+
+
+
+
+.client-testimonials h1 {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+
+}
+
+section {
+    /* border: 1px solid red; */
+    /* height: 30em;  */
+    display: flex; 
+     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.client {
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.testimonial p{
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.client-testimonials h1{
+    margin-top: 30px;
+    color: grey;
+    font-size: 20px;
+    padding-block: 5vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.testimonial cite {
+    margin-bottom: 20px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    background-position: center;
+    /* background-size: cover; */
+     background-repeat: no-repeat;
+    height:100;
+    width: 200vw;
+}
+
+.grid-item {
+    /* border: 1px solid red; */
+    height: 20em;
+}
+
+.item1 {
+    background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+}
+
+.item2 {
+    background-image: url(images/mobile/image-gallery-orange.jpg);
+}
+
+.item3 {
+    background-image: url(images/mobile/image-gallery-cone.jpg);
+}
+
+.item4 {
+    background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+footer{
+    background-color: aquamarine;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer > img {
+    margin: 20px 0;
+}
+
+footer .navlinks {
+    margin-bottom: 30px;  
+}
+
+footer .navlinks a{
+    margin-right: 15px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.navlinks a:hover{
+    background-color: rgb(253, 153, 86);
+}
+
+footer .icons a{
+    margin-left: 10px;
+}
+
+@media (Width<=500px) {
+    header{
+        background-image: url(/images/mobile/image-header.jpg);
+        height: 65wv;
+    }
+    header ul{
+        display: none;
+    }
+    .ham{
+        display: block;
+    }
+    main{
+        grid-template-columns: auto; 
+    }
+    main div:nth-child(1){
+        padding: 0;
+        height: 40vh;
+        text-align: center;
+        padding-inline:5vh;
+        padding-block: 10vh;
+
+    }
+    main div:nth-child(2){
+        padding: 0;
+        max-height: 40vh;
+        height: 40vh;
+
+    }
+    main div:nth-child(3){
+        padding: 0;
+        max-height: 40vh;
+        height: 40vh;
+    }
+    main div:nth-child(4){
+        padding: 0;
+        height: 40vh;
+        text-align: center;
+        padding-inline: 5vw;
+        padding-block: 10vh;
+
+    }
+    main div:nth-child(5){
+        padding: 0;
+        /* max-height: 40vh; */
+        height: 60vh;
+        text-align: center;
+        padding-bottom: 5vh;
+        background-image: url(/images/mobile/image-graphic-design.jpg);
+        background-position-x:center ;
+
+    }
+    main div:nth-child(6){
+        padding: 0;
+        height: 60vh;
+        text-align: center;
+        padding-bottom: 5vh;
+        background-image: url(/images/mobile/image-photography.jpg);
+        background-position-x:center ;
+
+    }
+    .item1 div:nth-child(1){
+        padding: 0;
+        height: 30px;
+        padding-bottom: center;
+        background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+        background-position-x: center;
+
+    }
+    .item2 div:nth-child(2){
+        padding: 0;
+        height: 40vh;
+        text-align: center;
+        padding-inline: 5vw;
+        padding-block: 10vh;
+        background-image: url(/images/mobile/image-gallery-orange.jpg);
+
+    }
+    .item3 div:nth-child(3){
+        padding: 0;
+        height: 40vh;
+        text-align: center;
+        /* padding-inline: 5vw; */
+        padding-block: 10vh;
+        background-image: url(/images/mobile/image-gallery-cone.jpg);
+
+
+    }
+    .item4 div:nth-child(1){
+        padding: 0;
+        height: 40vh;
+        text-align: center;
+        padding-inline: 5vw;
+        padding-block: 10vh;
+        background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+        background-position-x: center;
+    }
+    
+}
